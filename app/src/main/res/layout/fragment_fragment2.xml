@@ -26,7 +26,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#2567ab"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
             >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/yes_butt"
+                android:text="yes"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:background="#04AF55"
+                />
+            <Button
+                android:textSize="20dp"
+                android:background="#fff"
+                android:textColor="#C1381F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/no_butt"
+                android:text="no"
+                />
         </LinearLayout>
     </RelativeLayout>
 

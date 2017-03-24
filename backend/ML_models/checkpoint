@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/vasu/all_projects/HINT/backend/ML_models/tflearn_nn.model"
+all_model_checkpoint_paths: "/home/vasu/all_projects/HINT/backend/ML_models/tflearn_nn.model"

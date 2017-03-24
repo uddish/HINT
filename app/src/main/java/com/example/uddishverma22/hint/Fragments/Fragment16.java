@@ -1,6 +1,7 @@
 package com.example.uddishverma22.hint.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.uddishverma22.hint.MainActivity;
@@ -34,7 +36,7 @@ public class Fragment16 extends Fragment {
 
     TextView tv, yes, no, dont;
     Animation animation;
-
+    Button yes,no,maybe;
 
     public Fragment16() {
         // Required empty public constructor
@@ -107,6 +109,33 @@ public class Fragment16 extends Fragment {
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Raleway-Regular.ttf");
         tv.setTypeface(tf);
         tv.setAnimation(animation);
+        yes = (Button) v.findViewById(R.id.yes_buttt);
+        no = (Button) v.findViewById(R.id.no_butt);
+        maybe = (Button) v.findViewById(R.id.maybe_butt3);
+
+        yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        maybe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
         return v;    }
 
     // TODO: Rename method, update argument and hook method into UI event

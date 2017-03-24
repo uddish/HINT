@@ -7,11 +7,11 @@ package com.example.uddishverma22.hint;
 public class UserProfile {
 
     String name;
-    int age;
+    String age;
     String gender;
     String occupation;
 
-    public UserProfile(String name, int age, String gender, String occupation) {
+    public UserProfile(String name, String age, String gender, String occupation) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -26,11 +26,11 @@ public class UserProfile {
         this.name = name;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 

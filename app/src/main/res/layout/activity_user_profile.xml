@@ -1,94 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="#ecf0f1"
     tools:context="com.example.uddishverma22.hint.UserProfileActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/grad"
+        />
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:cardElevation="3dp"
-        app:cardCornerRadius="4dp">
+        android:layout_height="270dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/card_view"
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#8bc0ff">
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp">
-
-            <EditText
-                android:layout_margin="10dp"
-                android:id="@+id/name_et"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Name"
-                android:textSize="25sp" />
-        </android.support.design.widget.TextInputLayout>
-
-
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp">
-
-            <EditText
-                android:layout_margin="10dp"
-                android:id="@+id/gender"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Gender(F/M/Other)"
-                android:textSize="25sp" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp">
-
-            <EditText
-                android:layout_margin="10dp"
-                android:id="@+id/age"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Age"
-                android:textSize="25sp" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp">
-
-            <EditText
-                android:layout_margin="10dp"
-                android:id="@+id/occupation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Occupation"
-                android:textSize="25sp" />
-        </android.support.design.widget.TextInputLayout>
-
-    </LinearLayout>
-
+        android:layout_marginRight="5dp"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_margin="10dp"
+           >
+          <android.support.design.widget.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:hint="Name"
+                  android:id="@+id/name_person"
+                  />
+          </android.support.design.widget.TextInputLayout>
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:hint="Age"
+                   android:inputType="number"
+                   android:id="@+id/age"
+                   />
+           </android.support.design.widget.TextInputLayout>
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:hint="Gender"
+                   android:id="@+id/gender"
+                   />
+           </android.support.design.widget.TextInputLayout>
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:hint="Occupation"
+                   android:id="@+id/occupation"
+                   />
+           </android.support.design.widget.TextInputLayout>
+       </LinearLayout>
     </android.support.v7.widget.CardView>
-
     <Button
-        android:layout_margin="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#2567ab"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:text="SAVE"/>
-
-
-</LinearLayout>
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/shape_butt"
+        android:backgroundTint="#4865D3"
+        android:layout_below="@id/card_view"
+        android:textColor="#fff"
+        android:text="SUBMIT"
+        android:id="@+id/sub_butt"
+        android:elevation="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

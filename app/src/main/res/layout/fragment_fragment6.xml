@@ -10,10 +10,16 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tv6"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="do you work remotely(outside of an office) at least 50% of the time?"/>
-
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="35dp"
+            android:text="Do you work remotely at least 50% of the time?"
+            android:textStyle="bold"
+            android:textColor="#2567ab"/>
     </RelativeLayout>
 
 </FrameLayout>

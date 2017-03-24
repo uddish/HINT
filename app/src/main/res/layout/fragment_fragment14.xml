@@ -9,10 +9,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tv14"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Would you be willing to discuss a mental health issue with your direct supervisor(s)"/>
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="27dp"
+            android:text="Would you be willing to discuss a mental health issue with your direct supervisor(s)?"
+            android:textStyle="bold"
+            android:textColor="#000"/>
 
     </RelativeLayout>
 

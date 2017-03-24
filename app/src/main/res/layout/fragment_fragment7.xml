@@ -2,18 +2,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tech_job"
+    android:background="@drawable/tech_job1"
     tools:context="com.example.uddishverma22.hint.Fragments.Fragment7">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Is your employer primarily a tech company/organization?"/>
 
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="32dp"
+            android:text="Is your employer primarily a tech company/organization?"
+            android:textStyle="bold"
+            android:textColor="#000"/>
     </RelativeLayout>
 
 </FrameLayout>

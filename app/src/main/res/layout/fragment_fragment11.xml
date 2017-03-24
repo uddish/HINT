@@ -14,6 +14,18 @@
             android:layout_height="wrap_content"
             android:text="How easy is it for you to take medical leave for a mental health conditiom?"/>
 
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="30dp"
+            android:text="How easy is it for you to take medical leave for a mental health conditiom?"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
     </RelativeLayout>
 
 </FrameLayout>

@@ -10,9 +10,16 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tv12"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="do you think that discussing a mental/physical health issue with your employer would have negative consequences"/>
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="27dp"
+            android:text="Do you think that discussing a mental/physical health issue with your employer would have negative consequences?"
+            android:textStyle="bold"
+            android:textColor="#ff405e"/>
 
     </RelativeLayout>
 

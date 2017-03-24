@@ -10,10 +10,16 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tv9"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Do you know the options for mental health care your employer provides"/>
-
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="30dp"
+            android:text="Do you know the options for mental health care your employer provides?"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
     </RelativeLayout>
 
 </FrameLayout>

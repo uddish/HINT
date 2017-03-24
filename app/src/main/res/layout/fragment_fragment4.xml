@@ -10,10 +10,16 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tv4"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="if you have a mental health condition, do you feel that it interf. with your work"/>
-
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="32dp"
+            android:text="If you have a mental health condition, do you feel that it interf. with your work?"
+            android:textStyle="bold"
+            android:textColor="#000"/>
     </RelativeLayout>
 
 </FrameLayout>

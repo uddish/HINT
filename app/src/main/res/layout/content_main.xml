@@ -9,6 +9,7 @@
     tools:context="com.example.uddishverma22.hint.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+<<<<<<< HEAD
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,4 +45,7 @@
             app:backgroundTint="@color/colorPrimary" />
     </LinearLayout>
 
+=======
+       
+>>>>>>> f8e702760fae5c9ace90a2d73986783c8f8361a4
 </LinearLayout>

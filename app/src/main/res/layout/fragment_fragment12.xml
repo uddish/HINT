@@ -21,6 +21,12 @@
             android:textStyle="bold"
             android:textColor="#ff405e"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e8e8"
+            >
+        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>

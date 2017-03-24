@@ -21,6 +21,13 @@
             android:text="Does your employer provides mental health benefits?"
             android:textStyle="bold"
             android:textColor="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99e265"
+            >
+        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>

@@ -1,5 +1,6 @@
 package com.example.uddishverma22.hint;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -68,8 +69,9 @@ public class MainActivity extends AppCompatActivity
 //        viewPagerAdapter.AddFragments(new Fragment17());
 //        viewPagerAdapter.AddFragments(new Fragment18());
         viewPager.setAdapter(viewPagerAdapter);
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        final TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
+
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override

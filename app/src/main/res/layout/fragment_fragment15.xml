@@ -17,11 +17,17 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textAppearance="?android:textAppearanceLarge"
-            android:textSize="30dp"
+            android:textSize="26dp"
             android:text="Would you bring up a mental/physical issue with a potential employer in an interview?"
             android:textStyle="bold"
             android:textColor="#fff"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0692d"
+            >
+        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>

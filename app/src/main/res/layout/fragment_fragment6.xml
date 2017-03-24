@@ -20,6 +20,13 @@
             android:text="Do you work remotely at least 50% of the time?"
             android:textStyle="bold"
             android:textColor="#2567ab"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#83b5f0"
+            >
+        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>

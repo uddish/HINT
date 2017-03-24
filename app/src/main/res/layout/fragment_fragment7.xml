@@ -21,6 +21,12 @@
             android:text="Is your employer primarily a tech company/organization?"
             android:textStyle="bold"
             android:textColor="#000"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff935f"
+            >
+        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>

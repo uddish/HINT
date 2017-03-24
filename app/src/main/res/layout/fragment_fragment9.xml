@@ -16,10 +16,16 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textAppearance="?android:textAppearanceLarge"
-            android:textSize="30dp"
+            android:textSize="27dp"
             android:text="Do you know the options for mental health care your employer provides?"
             android:textStyle="bold"
             android:textColor="#fff"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#52b3ff"
+            >
+        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>

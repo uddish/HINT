@@ -10,11 +10,6 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="How easy is it for you to take medical leave for a mental health conditiom?"/>
-
-        <TextView
             android:id="@+id/tv11"
             android:layout_margin="20dp"
             android:layout_width="match_parent"
@@ -22,10 +17,16 @@
             android:gravity="center"
             android:textAppearance="?android:textAppearanceLarge"
             android:textSize="30dp"
-            android:text="How easy is it for you to take medical leave for a mental health conditiom?"
+            android:text="How easy is it for you to take medical leave for a mental health condition?"
             android:textStyle="bold"
             android:textColor="#fff"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#52b3ff"
+            >
+        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>

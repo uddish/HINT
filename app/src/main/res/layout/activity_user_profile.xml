@@ -7,21 +7,88 @@
     android:layout_height="match_parent"
     tools:context="com.example.uddishverma22.hint.UserProfileActivity">
 
-    <LinearLayout
-        android:layout_weight="1"
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="#83b5f0">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#8bc0ff">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:layout_margin="10dp"
+                android:id="@+id/name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textSize="25sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:layout_margin="10dp"
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gender(F/M/Other)"
+                android:textSize="25sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:layout_margin="10dp"
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:textSize="25sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:layout_margin="10dp"
+                android:id="@+id/occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Occupation"
+                android:textSize="25sp" />
+        </android.support.design.widget.TextInputLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_weight="1"
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
-
-    </LinearLayout>
-
+        android:layout_height="wrap_content"
+        android:background="#2567ab"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="SAVE"/>
 
 
 </LinearLayout>

@@ -20,6 +20,9 @@
 
     </android.support.design.widget.AppBarLayout>
 
+<<<<<<< HEAD
+    <include layout="@layout/content_main" />
+=======
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,5 +59,6 @@
         <!--android:layout_gravity="bottom|end"-->
         <!--android:layout_margin="@dimen/fab_margin"-->
         <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+>>>>>>> f8e702760fae5c9ace90a2d73986783c8f8361a4
 
 </android.support.design.widget.CoordinatorLayout>

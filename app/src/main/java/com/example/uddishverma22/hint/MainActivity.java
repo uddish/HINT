@@ -1,8 +1,12 @@
 package com.example.uddishverma22.hint;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,16 +17,60 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.uddishverma22.hint.Fragments.Fragment1;
+import com.example.uddishverma22.hint.Fragments.Fragment10;
+import com.example.uddishverma22.hint.Fragments.Fragment11;
+import com.example.uddishverma22.hint.Fragments.Fragment12;
+import com.example.uddishverma22.hint.Fragments.Fragment13;
+import com.example.uddishverma22.hint.Fragments.Fragment14;
+import com.example.uddishverma22.hint.Fragments.Fragment15;
+import com.example.uddishverma22.hint.Fragments.Fragment16;
+import com.example.uddishverma22.hint.Fragments.Fragment17;
+import com.example.uddishverma22.hint.Fragments.Fragment18;
+import com.example.uddishverma22.hint.Fragments.Fragment2;
+import com.example.uddishverma22.hint.Fragments.Fragment3;
+import com.example.uddishverma22.hint.Fragments.Fragment4;
+import com.example.uddishverma22.hint.Fragments.Fragment5;
+import com.example.uddishverma22.hint.Fragments.Fragment6;
+import com.example.uddishverma22.hint.Fragments.Fragment7;
+import com.example.uddishverma22.hint.Fragments.Fragment8;
+import com.example.uddishverma22.hint.Fragments.Fragment9;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-
+    ViewPager viewPager;
+    ViewPagerAdapter viewPagerAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        viewPager = (ViewPager) findViewById(R.id.view_pager1);
+        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+        viewPagerAdapter.AddFragments(new Fragment1());
+        viewPagerAdapter.AddFragments(new Fragment2());
+        viewPagerAdapter.AddFragments(new Fragment3());
+        viewPagerAdapter.AddFragments(new Fragment4());
+        viewPagerAdapter.AddFragments(new Fragment5());
+        viewPagerAdapter.AddFragments(new Fragment6());
+        viewPagerAdapter.AddFragments(new Fragment7());
+        viewPagerAdapter.AddFragments(new Fragment8());
+        viewPagerAdapter.AddFragments(new Fragment9());
+        viewPagerAdapter.AddFragments(new Fragment10());
+        viewPagerAdapter.AddFragments(new Fragment11());
+        viewPagerAdapter.AddFragments(new Fragment12());
+        viewPagerAdapter.AddFragments(new Fragment13());
+        viewPagerAdapter.AddFragments(new Fragment14());
+        viewPagerAdapter.AddFragments(new Fragment15());
+        viewPagerAdapter.AddFragments(new Fragment16());
+//        viewPagerAdapter.AddFragments(new Fragment17());
+//        viewPagerAdapter.AddFragments(new Fragment18());
+        viewPager.setAdapter(viewPagerAdapter);
+        final TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        tabLayout.setupWithViewPager(viewPager);
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {

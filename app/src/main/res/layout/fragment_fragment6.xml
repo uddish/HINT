@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/remote_work"
+    tools:context="com.example.uddishverma22.hint.Fragments.Fragment6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="35dp"
+            android:text="Do you work remotely at least 50% of the time?"
+            android:textStyle="bold"
+            android:textColor="#2567ab"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#83b5f0"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+          <Button
+              android:layout_width="match_parent"
+              android:layout_margin="10dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_butt"
+              android:id="@+id/yes_butt"
+              android:text="YES"
+              android:textColor="#fff"
+              android:textAppearance="?android:textAppearanceLarge"
+              android:backgroundTint="#2c97de"
+              />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#2c97de"
+                android:text="NO"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:background="@drawable/shape_butt"
+                android:id="@+id/no_butt"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

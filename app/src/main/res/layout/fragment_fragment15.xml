@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/interview"
+    android:layout_height="match_parent"
+    tools:context="com.example.uddishverma22.hint.Fragments.Fragment15">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv15"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="26dp"
+            android:text="Would you bring up a mental/physical issue with a potential employer in an interview?"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0692d"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:id="@+id/yes_buttt"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:background="#2b3e51"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NO"
+                android:textStyle="bold"
+                android:id="@+id/no_button"
+                android:textColor="#8e0e1f"
+                android:background="#fff"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAYBE"
+                android:textStyle="bold"
+                android:id="@+id/maybe_butt2"
+                android:textColor="#60779b"
+                android:background="#fed731"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

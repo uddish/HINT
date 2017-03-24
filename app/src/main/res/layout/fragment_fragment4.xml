@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/health_interfere_withwork"
+    tools:context="com.example.uddishverma22.hint.Fragments.Fragment4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="32dp"
+            android:text="If you have a mental health condition, do you feel that it interf. with your work?"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff935f"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/some_butt"
+                android:text="SOMETIMES"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:background="#04AF55"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <Button
+                android:textSize="20dp"
+                android:background="#fff"
+                android:textColor="#C1381F"
+                android:layout_weight="1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/no_butt"
+                android:text="never"
+                />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="#C1381F"
+                    android:text="OFTEN"
+                    android:id="@+id/often_butt"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="#eaec08"
+                    />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RARELY"
+                android:textColor="#fff"
+                android:background="#0792fb"
+                android:id="@+id/rarely_butt"
+                android:layout_weight="1"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CAN'T SAY"
+                android:textColor="#fff"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:background="#7e2de7"
+                android:id="@+id/cant_butt"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

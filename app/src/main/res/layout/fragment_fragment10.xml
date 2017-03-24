@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/health"
+    tools:context="com.example.uddishverma22.hint.Fragments.Fragment10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="21dp"
+            android:text="Is your anonimity protected if you choose to take advantageof mental health or substance abuse treatment resources?"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7c4834"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:id="@+id/yes_buttt"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:background="#da9284"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NO"
+                android:textStyle="bold"
+                android:id="@+id/no_button"
+                android:textColor="#8e0e1f"
+                android:background="#fff"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DON'T KNOW"
+                android:textStyle="bold"
+                android:id="@+id/dont_know"
+                android:textColor="#ffff"
+                android:background="#ffa500"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

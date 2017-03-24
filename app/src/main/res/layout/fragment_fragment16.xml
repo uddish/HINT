@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/men_phy"
+    tools:context="com.example.uddishverma22.hint.Fragments.Fragment16">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv16"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="30dp"
+            android:text="Do you feel that your employer takes mental health as seriously as physical health?"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF952"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:id="@+id/yes_buttt"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:background="#2b3e51"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NO"
+                android:textStyle="bold"
+                android:id="@+id/no_button"
+                android:textColor="#8e0e1f"
+                android:background="#fff"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAYBE"
+                android:textStyle="bold"
+                android:id="@+id/maybe_butt3"
+                android:textColor="#fed731"
+                android:background="#8e0e1f"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

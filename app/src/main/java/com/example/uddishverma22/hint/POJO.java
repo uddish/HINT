@@ -199,6 +199,4 @@ public class POJO {
         this.ment_interview = ment_interview;
         this.phys_health_i = phys_health_i;
     }
-
-
 }

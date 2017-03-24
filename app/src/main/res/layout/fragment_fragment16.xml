@@ -26,7 +26,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFF952"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
             >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:id="@+id/yes_buttt"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:background="#2b3e51"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NO"
+                android:textStyle="bold"
+                android:id="@+id/no_button"
+                android:textColor="#8e0e1f"
+                android:background="#fff"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAYBE"
+                android:textStyle="bold"
+                android:id="@+id/maybe_butt3"
+                android:textColor="#fed731"
+                android:background="#8e0e1f"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
         </LinearLayout>
     </RelativeLayout>
 

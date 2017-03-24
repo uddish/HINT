@@ -22,12 +22,21 @@
             android:textStyle="bold"
             android:textColor="#fff"/>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#00b4b7"
+            android:layout_height="40dp"
+            android:background="#ffff"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
             >
-        </LinearLayout>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/spin_range"
+                ></Spinner>
+        </RelativeLayout>
     </RelativeLayout>
 
 </FrameLayout>

@@ -8,6 +8,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.example.uddishverma22.hint.R;
@@ -16,7 +18,6 @@ import com.example.uddishverma22.hint.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Fragment6.OnFragmentInteractionListener} interface
  * to handle interaction events.
  * Use the {@link Fragment6#newInstance} factory method to
  * create an instance of this fragment.

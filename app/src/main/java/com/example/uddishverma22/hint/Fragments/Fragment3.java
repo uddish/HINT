@@ -5,6 +5,7 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
+import com.example.uddishverma22.hint.MainActivity;
 import com.example.uddishverma22.hint.R;
 
 /**
@@ -31,7 +33,7 @@ public class Fragment3 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    TextView tv;
+    TextView tv, btnYes, btnNo;
     Animation animation;
 
 
@@ -71,8 +73,29 @@ public class Fragment3 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_fragment3, container, false);
+
         animation = AnimationUtils.loadAnimation(getActivity(), R.anim.slide);
+
         tv = (TextView) v.findViewById(R.id.tv1);
+        btnYes = (TextView) v.findViewById(R.id.yes_btn);
+        btnNo = (TextView) v.findViewById(R.id.no_btn);
+
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.treatment = 1;
+                MainActivity.viewPager.setCurrentItem(3);
+            }
+        });
+
+        btnNo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.treatment = 0;
+                MainActivity.viewPager.setCurrentItem(3);
+            }
+        });
+
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Raleway-Regular.ttf");
         tv.setTypeface(tf);
         tv.startAnimation(animation);

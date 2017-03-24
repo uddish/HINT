@@ -33,9 +33,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="YES"
-                android:id="@+id/yes_buttt"
+                android:id="@+id/btn_yes"
                 android:textAppearance="?android:textAppearanceLarge"
-                android:background="#2b3e51"
+                android:background="#87c759"
                 android:textColor="#fff"
                 android:textStyle="bold"
                 />
@@ -44,9 +44,9 @@
                 android:layout_height="wrap_content"
                 android:text="NO"
                 android:textStyle="bold"
-                android:id="@+id/no_button"
-                android:textColor="#8e0e1f"
-                android:background="#fff"
+                android:id="@+id/btn_no"
+                android:textColor="#fff"
+                android:background="#e85954"
                 android:textAppearance="?android:textAppearanceLarge"
                 />
             <Button
@@ -54,9 +54,9 @@
                 android:layout_height="wrap_content"
                 android:text="MAYBE"
                 android:textStyle="bold"
-                android:id="@+id/maybe_butt3"
-                android:textColor="#fed731"
-                android:background="#8e0e1f"
+                android:id="@+id/btn_dont"
+                android:textColor="#a83d3d"
+                android:background="#fff"
                 android:textAppearance="?android:textAppearanceLarge"
                 />
         </LinearLayout>

@@ -12,6 +12,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
+import com.example.uddishverma22.hint.MainActivity;
 import com.example.uddishverma22.hint.R;
 
 /**
@@ -31,7 +32,7 @@ public class Fragment11 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    TextView tv;
+    TextView tv, sometimes, rare, never, often, cantsay;
     Animation animation;
 
 
@@ -71,8 +72,56 @@ public class Fragment11 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_fragment11, container, false);
+
         animation = AnimationUtils.loadAnimation(getActivity(), R.anim.slide_down);
+
         tv = (TextView) v.findViewById(R.id.tv11);
+        sometimes = (TextView) v.findViewById(R.id.btn_some);
+        rare = (TextView) v.findViewById(R.id.btn_rare);
+        never = (TextView) v.findViewById(R.id.btn_never);
+        often = (TextView) v.findViewById(R.id.btn_often);
+        cantsay = (TextView) v.findViewById(R.id.btn_cant);
+
+        sometimes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.leave = 2;
+                MainActivity.viewPager.setCurrentItem(10);
+            }
+        });
+
+        rare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.leave = 3;
+                MainActivity.viewPager.setCurrentItem(10);
+            }
+        });
+
+        never.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.leave = 4;
+                MainActivity.viewPager.setCurrentItem(10);
+            }
+        });
+
+        often.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.leave = 1;
+                MainActivity.viewPager.setCurrentItem(10);
+            }
+        });
+
+        cantsay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.leave = 0;
+                MainActivity.viewPager.setCurrentItem(10);
+            }
+        });
+
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Raleway-Regular.ttf");
         tv.setTypeface(tf);
         tv.setAnimation(animation);

@@ -30,10 +30,9 @@
             >
           <Button
               android:layout_width="match_parent"
-              android:layout_margin="10dp"
               android:layout_height="wrap_content"
               android:background="@drawable/shape_butt"
-              android:id="@+id/yes_butt"
+              android:id="@+id/btn_yes"
               android:text="YES"
               android:textColor="#fff"
               android:textAppearance="?android:textAppearanceLarge"
@@ -42,12 +41,11 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:textColor="#2c97de"
+                android:textColor="#5979c4"
                 android:text="NO"
                 android:textAppearance="?android:textAppearanceLarge"
                 android:background="@drawable/shape_butt"
-                android:id="@+id/no_butt"
+                android:id="@+id/btn_no"
                 />
         </LinearLayout>
     </RelativeLayout>

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.uddishverma22.hint.MainActivity;
 import com.example.uddishverma22.hint.R;
 
 /**
@@ -19,7 +20,7 @@ import com.example.uddishverma22.hint.R;
  */
 public class Fragment10 extends Fragment {
 
-    TextView tv;
+    TextView tv, yes, no, dont;
 
     public Fragment10() {
         // Required empty public constructor
@@ -31,10 +32,40 @@ public class Fragment10 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_fragment10, container, false);
+
         tv = (TextView) v.findViewById(R.id.tv10);
+        yes = (TextView) v.findViewById(R.id.btn_yes);
+        no = (TextView) v.findViewById(R.id.btn_no);
+        dont = (TextView) v.findViewById(R.id.btn_dont);
+
+        yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.anonymity = 1;
+                MainActivity.viewPager.setCurrentItem(9);
+            }
+        });
+
+        no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.anonymity = 0;
+                MainActivity.viewPager.setCurrentItem(9);
+            }
+        });
+
+        dont.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.anonymity = 2;
+                MainActivity.viewPager.setCurrentItem(9);
+            }
+        });
+
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Raleway-Regular.ttf");
         tv.setTypeface(tf);
-        return v;    }
+        return v;
+    }
 
     // TODO: Rename method, update argument and hook method into UI event
     /**

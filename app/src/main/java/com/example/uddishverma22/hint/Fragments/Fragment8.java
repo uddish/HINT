@@ -12,6 +12,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
+import com.example.uddishverma22.hint.MainActivity;
 import com.example.uddishverma22.hint.R;
 
 /**
@@ -31,7 +32,7 @@ public class Fragment8 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    TextView tv;
+    TextView tv, yes, no, dontknow;
     Animation animation;
 
 
@@ -71,8 +72,41 @@ public class Fragment8 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_fragment8, container, false);
+
         animation = AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in);
+
         tv = (TextView) v.findViewById(R.id.tv8);
+        yes = (TextView) v.findViewById(R.id.btn_yes);
+        no = (TextView) v.findViewById(R.id.btn_no);
+        dontknow = (TextView) v.findViewById(R.id.btn_dont);
+
+        yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.benefits = 0;
+                MainActivity.seekhelp = 1;
+                MainActivity.viewPager.setCurrentItem(8);
+            }
+        });
+
+        no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.benefits = 1;
+                MainActivity.seekhelp = 0;
+                MainActivity.viewPager.setCurrentItem(8);
+            }
+        });
+
+        dontknow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.benefits = 2;
+                MainActivity.seekhelp = 2;
+                MainActivity.viewPager.setCurrentItem(8);
+            }
+        });
+
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Raleway-Regular.ttf");
         tv.setTypeface(tf);
         tv.setAnimation(animation);

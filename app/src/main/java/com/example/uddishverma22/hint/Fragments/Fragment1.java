@@ -1,17 +1,22 @@
 package com.example.uddishverma22.hint.Fragments;
 
+import android.app.TabActivity;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.uddishverma22.hint.MainActivity;
+import com.example.uddishverma22.hint.POJO;
 import com.example.uddishverma22.hint.R;
 
 /**
@@ -27,11 +32,13 @@ public class Fragment1 extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+    public static final String TAG = "Fragment1";
+
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
-    TextView tv;
+    TextView tv, btnYes, btnNo;
     Animation animation;
 
 
@@ -71,8 +78,31 @@ public class Fragment1 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_fragment1, container, false);
+
+
         animation = AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in);
+
         tv = (TextView) v.findViewById(R.id.tv1);
+        btnYes = (TextView) v.findViewById(R.id.btn_yes);
+        btnNo = (TextView) v.findViewById(R.id.btn_no);
+
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.s_emp = 1;
+                MainActivity.viewPager.setCurrentItem(1);
+                Log.d(TAG, "onClick: S_EMP " + MainActivity.s_emp);
+            }
+        });
+
+        btnNo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.s_emp = 0;
+                MainActivity.viewPager.setCurrentItem(1);
+            }
+        });
+
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Raleway-Regular.ttf");
         tv.setTypeface(tf);
         tv.startAnimation(animation);

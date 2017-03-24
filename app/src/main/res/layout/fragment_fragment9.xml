@@ -17,7 +17,7 @@
             android:gravity="center"
             android:textAppearance="?android:textAppearanceLarge"
             android:textSize="27dp"
-            android:text="Do you know the options for mental health care your employer provides?"
+            android:text="Does your employee provide resources"
             android:textStyle="bold"
             android:textColor="#fff"/>
         <LinearLayout
@@ -31,12 +31,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="YES"
-                android:layout_margin="10dp"
-                android:id="@+id/yes_buttt"
+                android:id="@+id/btn_yes"
                 android:backgroundTint="#2c3c65"
                 android:textAppearance="?android:textAppearanceLarge"
                 android:background="@drawable/shape_butt"
-                android:textColor="#fed731"
+                android:textColor="#fff"
                 android:textStyle="bold"
                 />
             <Button
@@ -44,9 +43,8 @@
                 android:layout_height="wrap_content"
                 android:text="NO"
                 android:textStyle="bold"
-                android:id="@+id/no_button"
-                android:textColor="#8e0e1f"
-                android:layout_margin="10dp"
+                android:id="@+id/btn_no"
+                android:textColor="#2c3c65"
                 android:background="@drawable/shape_butt"
                 android:textAppearance="?android:textAppearanceLarge"
                 />

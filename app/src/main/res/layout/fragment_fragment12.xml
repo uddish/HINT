@@ -32,9 +32,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="YES"
-                android:id="@+id/yes_buttt"
+                android:id="@+id/btn_yes"
                 android:textAppearance="?android:textAppearanceLarge"
-                android:background="#279660"
+                android:background="#87c759"
                 android:textColor="#fff"
                 android:textStyle="bold"
                 />
@@ -43,8 +43,8 @@
                 android:layout_height="wrap_content"
                 android:text="NO"
                 android:textStyle="bold"
-                android:id="@+id/no_button"
-                android:textColor="#8e0e1f"
+                android:id="@+id/btn_no"
+                android:textColor="#ff405e"
                 android:background="#fff"
                 android:textAppearance="?android:textAppearanceLarge"
                 />
@@ -53,9 +53,9 @@
                 android:layout_height="wrap_content"
                 android:text="DON'T KNOW"
                 android:textStyle="bold"
-                android:id="@+id/maybe_butt"
-                android:textColor="#675829"
-                android:background="#cbac27"
+                android:id="@+id/btn_dont"
+                android:textColor="#fff"
+                android:background="#a097cc"
                 android:textAppearance="?android:textAppearanceLarge"
                 />
         </LinearLayout>

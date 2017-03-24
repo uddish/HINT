@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.uddishverma22.hint.MainActivity;
 import com.example.uddishverma22.hint.R;
 
 /**
@@ -29,7 +30,7 @@ public class Fragment15 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    TextView tv;
+    TextView tv, yes, no, dont;
 
     public Fragment15() {
         // Required empty public constructor
@@ -67,7 +68,39 @@ public class Fragment15 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_fragment15, container, false);
+
         tv = (TextView) v.findViewById(R.id.tv15);
+        yes = (TextView) v.findViewById(R.id.btn_yes);
+        no = (TextView) v.findViewById(R.id.btn_no);
+        dont = (TextView) v.findViewById(R.id.btn_dont);
+
+        yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.ment_interview = 1;
+                MainActivity.phys_health_i = 1;
+                MainActivity.viewPager.setCurrentItem(14);
+            }
+        });
+
+        no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.ment_interview = 0;
+                MainActivity.phys_health_i = 0;
+                MainActivity.viewPager.setCurrentItem(14);
+            }
+        });
+
+        dont.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.ment_interview = 2;
+                MainActivity.phys_health_i = 2;
+                MainActivity.viewPager.setCurrentItem(14);
+            }
+        });
+
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Raleway-Regular.ttf");
         tv.setTypeface(tf);
         return v;    }

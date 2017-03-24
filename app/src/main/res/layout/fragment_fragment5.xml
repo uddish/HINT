@@ -34,8 +34,7 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:id="@+id/spin_range"
-                ></Spinner>
+                android:id="@+id/spin_range"/>
         </RelativeLayout>
     </RelativeLayout>
 

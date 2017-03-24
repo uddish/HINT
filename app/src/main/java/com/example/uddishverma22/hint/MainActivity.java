@@ -39,8 +39,15 @@ import com.example.uddishverma22.hint.Fragments.Fragment9;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    ViewPager viewPager;
+    public static ViewPager viewPager;
     ViewPagerAdapter viewPagerAdapter;
+
+    public static int age, gender, s_emp, family_his, treatment, work_interfere, no_of_emp, remotework, tech_comp, benefits,
+            seekhelp, anonymity, leave, mental_cons, phys_health, coworkers, superwisers, ment_interview, phys_health_i, phyvsmen;
+
+    //Static object that will be pushed to the server
+    public static POJO pojo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +65,7 @@ public class MainActivity extends AppCompatActivity
         viewPagerAdapter.AddFragments(new Fragment6());
         viewPagerAdapter.AddFragments(new Fragment7());
         viewPagerAdapter.AddFragments(new Fragment8());
-        viewPagerAdapter.AddFragments(new Fragment9());
+//        viewPagerAdapter.AddFragments(new Fragment9());
         viewPagerAdapter.AddFragments(new Fragment10());
         viewPagerAdapter.AddFragments(new Fragment11());
         viewPagerAdapter.AddFragments(new Fragment12());
@@ -66,20 +73,12 @@ public class MainActivity extends AppCompatActivity
         viewPagerAdapter.AddFragments(new Fragment14());
         viewPagerAdapter.AddFragments(new Fragment15());
         viewPagerAdapter.AddFragments(new Fragment16());
-//        viewPagerAdapter.AddFragments(new Fragment17());
-//        viewPagerAdapter.AddFragments(new Fragment18());
+
         viewPager.setAdapter(viewPagerAdapter);
         final TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+        pojo = new POJO(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

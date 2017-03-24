@@ -12,6 +12,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
+import com.example.uddishverma22.hint.MainActivity;
 import com.example.uddishverma22.hint.R;
 
 import org.w3c.dom.Text;
@@ -23,7 +24,7 @@ import org.w3c.dom.Text;
  */
 public class Fragment7 extends Fragment {
 
-    TextView tv;
+    TextView tv, btnYes, btnNo;
     Animation animation;
 
     public Fragment7() {
@@ -36,8 +37,29 @@ public class Fragment7 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_fragment7, container, false);
+
         animation = AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in);
+
         tv = (TextView) v.findViewById(R.id.tv7);
+        btnNo = (TextView) v.findViewById(R.id.btn_yes);
+        btnYes = (TextView) v.findViewById(R.id.btn_no);
+
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.tech_comp = 1;
+                MainActivity.viewPager.setCurrentItem(7);
+            }
+        });
+
+        btnNo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.tech_comp = 0;
+                MainActivity.viewPager.setCurrentItem(7);
+            }
+        });
+
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Raleway-Regular.ttf");
         tv.setTypeface(tf);
         tv.setAnimation(animation);

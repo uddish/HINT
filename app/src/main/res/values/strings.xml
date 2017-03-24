@@ -8,4 +8,15 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="no_emp">
+        <item>None</item>
+        <item>1-5</item>
+        <item>6-25</item>
+        <item>25-100</item>
+        <item>100-500</item>
+        <item>500-1000</item>
+        <item>1000 and above</item>
+
+    </string-array>
 </resources>

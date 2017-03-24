@@ -24,66 +24,73 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ff935f"
-            android:orientation="vertical"
+            android:background="#52b3ff"
             android:layout_alignParentBottom="true"
+            android:orientation="vertical"
             >
-            <Button
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/some_butt"
-                android:text="SOMETIMES"
-                android:textAppearance="?android:textAppearanceLarge"
-                android:layout_weight="1"
-                android:textColor="#fff"
-                android:background="#04AF55"
-                />
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/some_butt"
+                    android:text="SOMETIMES"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:background="#04AF55"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CAN'T SAY"
+                    android:textColor="#000"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:background="#fff"
+                    android:id="@+id/cant_butt"
+                    />
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 >
-            <Button
-                android:textSize="20dp"
-                android:background="#fff"
-                android:textColor="#C1381F"
-                android:layout_weight="1"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/no_butt"
-                android:text="never"
-                />
                 <Button
-                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:background="#fff"
+                    android:textColor="#a83d3d"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
-                    android:background="#C1381F"
+                    android:id="@+id/never_butt"
+                    android:text="never"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ff5c5c"
                     android:text="OFTEN"
                     android:id="@+id/often_butt"
                     android:textAppearance="?android:textAppearanceLarge"
-                    android:textColor="#eaec08"
+                    android:textColor="#fff"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="RARELY"
+                    android:textColor="#000"
+                    android:background="#dac9d6"
+                    android:id="@+id/rarely_butt"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:textAppearanceLarge"
                     />
             </LinearLayout>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="RARELY"
-                android:textColor="#fff"
-                android:background="#0792fb"
-                android:id="@+id/rarely_butt"
-                android:layout_weight="1"
-                android:textAppearance="?android:textAppearanceLarge"
-                />
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="CAN'T SAY"
-                android:textColor="#fff"
-                android:textAppearance="?android:textAppearanceLarge"
-                android:background="#7e2de7"
-                android:id="@+id/cant_butt"
-                />
+
         </LinearLayout>
 
     </RelativeLayout>

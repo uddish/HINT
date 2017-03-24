@@ -25,6 +25,15 @@ public class POJO {
     int superwisers;//no 0,yes 1,some of them 2
     int ment_interview;//no 0,yes 1,maybe 2
     int phys_health_i;//no 0,yes 1, maybe 2
+    int phyvsmen;//no 0,yes 1, maybe 2
+
+    public int getPhyvsmen() {
+        return phyvsmen;
+    }
+
+    public void setPhyvsmen(int phyvsmen) {
+        this.phyvsmen = phyvsmen;
+    }
 
     public int getAge() {
         return age;
@@ -178,7 +187,7 @@ public class POJO {
         this.phys_health_i = phys_health_i;
     }
 
-    public POJO(int age, int gender, int s_emp, int family_his, int treatment, int work_interfere, int no_of_emp, int remotework, int tech_comp, int benefits, int seekhelp, int anonymity, int leave, int mental_cons, int phys_health, int coworkers, int superwisers, int ment_interview, int phys_health_i) {
+    public POJO(int age, int gender, int s_emp, int family_his, int treatment, int work_interfere, int no_of_emp, int remotework, int tech_comp, int benefits, int seekhelp, int anonymity, int leave, int mental_cons, int phys_health, int coworkers, int superwisers, int ment_interview, int phys_health_i, int phyvsmen) {
         this.age = age;
         this.gender = gender;
         this.s_emp = s_emp;
@@ -198,5 +207,6 @@ public class POJO {
         this.superwisers = superwisers;
         this.ment_interview = ment_interview;
         this.phys_health_i = phys_health_i;
+        this.phyvsmen = phyvsmen;
     }
 }

@@ -39,7 +39,7 @@
                    android:layout_width="match_parent"
                    android:layout_height="match_parent"
                    android:text="YES"
-                   android:id="@+id/yes_butt"
+                   android:id="@+id/btn_yes"
                    android:textStyle="bold"
                    android:textColor="#fff"
                    android:textSize="20dp"
@@ -51,15 +51,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="?actionBarSize"
                 android:layout_weight="1"
-                android:background="#fff"
-                >
+                android:background="#fff">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="20dp"
                     android:textColor="#DF381A"
                     android:text="NO"
-                    android:id="@+id/no_butt"
+                    android:id="@+id/btn_no"
                     android:textStyle="bold"
                     android:gravity="center"
                     />

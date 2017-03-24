@@ -8,6 +8,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.example.uddishverma22.hint.R;
@@ -31,6 +33,7 @@ public class Fragment5 extends Fragment {
     private String mParam2;
 
     TextView tv;
+    Animation animation;
 
 
     public Fragment5() {
@@ -69,9 +72,11 @@ public class Fragment5 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_fragment5, container, false);
+        animation = AnimationUtils.loadAnimation(getActivity(), R.anim.slide_down);
         tv = (TextView) v.findViewById(R.id.tv5);
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Raleway-Regular.ttf");
         tv.setTypeface(tf);
+        tv.setAnimation(animation);
         return v;    }
 
     /**

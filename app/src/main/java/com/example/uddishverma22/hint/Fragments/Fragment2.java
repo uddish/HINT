@@ -1,13 +1,13 @@
 package com.example.uddishverma22.hint.Fragments;
 
-import android.content.Context;
 import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.example.uddishverma22.hint.R;
@@ -30,6 +30,7 @@ public class Fragment2 extends Fragment {
     private String mParam2;
 
     TextView tv;
+    Animation animation;
 
 
     public Fragment2() {
@@ -68,9 +69,11 @@ public class Fragment2 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_fragment2, container, false);
+        animation = AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in);
         tv = (TextView) v.findViewById(R.id.tv1);
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Raleway-Regular.ttf");
         tv.setTypeface(tf);
+        tv.startAnimation(animation);
         return v;
     }
 

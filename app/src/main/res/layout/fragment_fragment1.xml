@@ -9,7 +9,49 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#000"
+            android:layout_alignParentBottom="true"
+            >
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="?actionBarSize"
+               android:background="#0faa58"
+               android:layout_weight="1"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="YES"
+                   android:id="@+id/yes_butt"
+                   android:textStyle="bold"
+                   android:textColor="#fff"
+                   android:textSize="20dp"
+                   android:gravity="center"
+                   />
+           </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="?actionBarSize"
+                android:layout_weight="1"
+                android:background="#fff"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:textColor="#DF381A"
+                    android:text="NO"
+                    android:id="@+id/no_butt"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
     </RelativeLayout>
 
 

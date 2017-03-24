@@ -14,6 +14,12 @@
             android:layout_height="wrap_content"
             android:text="do you think that discussing a mental/physical health issue with your employer would have negative consequences"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e8e8"
+            >
+        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>

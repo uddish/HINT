@@ -14,6 +14,12 @@
             android:layout_height="wrap_content"
             android:text="does your employer provides mental health benifits"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99e265"
+            >
+        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>

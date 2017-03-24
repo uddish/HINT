@@ -13,7 +13,6 @@ import com.example.uddishverma22.hint.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Fragment2.OnFragmentInteractionListener} interface
  * to handle interaction events.
  * Use the {@link Fragment2#newInstance} factory method to
  * create an instance of this fragment.

@@ -15,6 +15,12 @@
             android:layout_height="wrap_content"
             android:text="do you have a family history of mental illness"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2567ab"
+            >
+        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>

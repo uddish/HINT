@@ -36,8 +36,10 @@ public class Fragment16 extends Fragment {
     private String mParam2;
 
     TextView tv, dont;
+    Button yes;
+    Button no;
+    Button maybe;
     Animation animation;
-    Button yes,no,maybe;
 
     public Fragment16() {
         // Required empty public constructor
@@ -137,6 +139,7 @@ public class Fragment16 extends Fragment {
                 startActivity(intent);
             }
         });
+
         return v;    }
 
     // TODO: Rename method, update argument and hook method into UI event

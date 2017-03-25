@@ -3,29 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#2567ab"
+    android:id="@+id/linear"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="com.example.uddishverma22.hint.FinalActivity">
-
-    <LinearLayout
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/img_view"-->
+        <!--/>-->
+    <TextView
+        android:id="@+id/tvvv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@drawable/gradien"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/final_res"
-                android:text="Yes Mohit I think you should leave your job,
-as right now that will be the best choice for you."
-                android:textColor="#fff"
-                android:textSize="50dp"
-                android:gravity="center"
-                />
-        </LinearLayout>
-    </LinearLayout>
-
+        android:layout_gravity="center"/>
 </LinearLayout>

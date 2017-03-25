@@ -1,5 +1,6 @@
 package com.example.uddishverma22.hint;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -130,12 +131,10 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
+            startActivity(new Intent(MainActivity.this, UserProfileActivity.class));
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
         } else if (id == R.id.nav_manage) {
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
         } else if (id == R.id.nav_share) {
 

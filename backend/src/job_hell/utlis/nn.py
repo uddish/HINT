@@ -17,12 +17,12 @@ def predict(data):
 	top_k = tflearn.metrics.Top_k(3)
 	net = tflearn.regression(softmax, optimizer='adam',loss='categorical_crossentropy')
 	model = tflearn.DNN(net)
-	model.load("./tflearn_nn.model")
+	model.load("/home/vasu/HINT/backend/src/job_hell/utlis/tflearn_nn.model")
 	
 	x = json.loads(data)
 	temp = []
 	for ix in x:
-		temp.append(x[ix])
+		temp.append(float(x[ix]))
 	
 	dum = np.array(temp)
 	dum = dum.reshape(1,20)

@@ -28,7 +28,11 @@
         </activity>
         <activity android:name=".FinalActivity" />
         <activity android:name=".UserProfileActivity" />
+<<<<<<< HEAD
         <activity android:name=".TempActivity"></activity>
+=======
+        <activity android:name=".FInale"></activity>
+>>>>>>> 8ac1a5b2fe89e03557215d7ec77361d87caff330
     </application>
 
 </manifest>

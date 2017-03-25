@@ -14,6 +14,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.uddishverma22.hint.FinalActivity;
 import com.example.uddishverma22.hint.MainActivity;
 import com.example.uddishverma22.hint.R;
 import com.example.uddishverma22.hint.TempActivity;
@@ -35,7 +36,10 @@ public class Fragment16 extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    TextView tv, yes, no, dont;
+    TextView tv, dont;
+    Button yes;
+    Button no;
+    Button maybe;
     Animation animation;
 
     public Fragment16() {
@@ -78,8 +82,8 @@ public class Fragment16 extends Fragment {
         animation = AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in);
 
         tv = (TextView) v.findViewById(R.id.tv16);
-        yes = (TextView) v.findViewById(R.id.btn_yes);
-        no = (TextView) v.findViewById(R.id.btn_no);
+        yes = (Button) v.findViewById(R.id.btn_yes);
+        no = (Button) v.findViewById(R.id.btn_no);
         dont = (TextView) v.findViewById(R.id.btn_dont);
 
         yes.setOnClickListener(new View.OnClickListener() {
@@ -107,6 +111,33 @@ public class Fragment16 extends Fragment {
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Raleway-Regular.ttf");
         tv.setTypeface(tf);
         tv.setAnimation(animation);
+        yes = (Button) v.findViewById(R.id.btn_yes);
+        no = (Button) v.findViewById(R.id.btn_no);
+        maybe = (Button) v.findViewById(R.id.btn_dont);
+
+        yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), FinalActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), FinalActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        maybe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), FinalActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return v;    }
 

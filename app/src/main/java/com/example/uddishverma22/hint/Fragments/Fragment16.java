@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.example.uddishverma22.hint.MainActivity;
 import com.example.uddishverma22.hint.R;
+import com.example.uddishverma22.hint.TempActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -81,29 +82,27 @@ public class Fragment16 extends Fragment {
         no = (TextView) v.findViewById(R.id.btn_no);
         dont = (TextView) v.findViewById(R.id.btn_dont);
 
-//        yes.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                MainActivity.phyvsmen = 1;
-//                MainActivity.viewPager.setCurrentItem(15);
-//            }
-//        });
+        yes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.phyvsmen = 1;
+                startActivity(new Intent(getActivity(), TempActivity.class));
+            }
+        });
 //
-//        no.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                MainActivity.phyvsmen = 0;
-//                MainActivity.viewPager.setCurrentItem(15);
-//            }
-//        });
+        no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.phyvsmen = 0;
+                startActivity(new Intent(getActivity(), TempActivity.class));            }
+        });
 //
-//        dont.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                MainActivity.phyvsmen = 2;
-//                MainActivity.viewPager.setCurrentItem(15);
-//            }
-//        });
+        dont.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity.phyvsmen = 2;
+                startActivity(new Intent(getActivity(), TempActivity.class));            }
+        });
 
         Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Raleway-Regular.ttf");
         tv.setTypeface(tf);

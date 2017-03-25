@@ -19,7 +19,7 @@ For example -
 
 AN APP THAT UNDERSTANDS YOU BETTER THAN YOU UNDERSTAND YOURSELF
 
-OPEN SOURCE USE - Android, Tensor Flow.
+OPEN SOURCE USE - Android, Tensor Flow, TF LEARN (Tensor Flow Deep Learning Library).
 
 
 SCREENSHOTS

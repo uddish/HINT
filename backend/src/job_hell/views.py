@@ -14,3 +14,4 @@ def get_score(request):
 	else:
 		return render(request, "main/thing.html")
 		return JsonResponse({'Error':'No POST request'})
+	

@@ -18,3 +18,11 @@ For example -
 
 
 AN APP THAT UNDERSTANDS YOU BETTER THAN YOU UNDERSTAND YOURSELF
+
+
+SCREENSHOTS
+
+
+![alt text](screenshots/DFG_2017-03-24-13-52-20.png "Question 1") 
+
+

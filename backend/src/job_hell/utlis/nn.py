@@ -22,7 +22,7 @@ def predict(data):
 	x = json.loads(data)
 	temp = []
 	for ix in x:
-		temp.append(x[ix])
+		temp.append(float(x[ix]))
 	
 	dum = np.array(temp)
 	dum = dum.reshape(1,20)

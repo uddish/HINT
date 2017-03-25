@@ -24,6 +24,6 @@ SCREENSHOTS
 
 
 ![alt text](screenshots/DFG_2017-03-24-13-52-20.png "Question 1")          ![alt text](screenshots/DFG_2017-03-24-14-36-45.png "Question 2")  				 ![alt text](screenshots/DFG_2017-03-24-14-37-13.png "Question 3")						![alt text](screenshots/DFG_2017-03-24-14-37-19.png
- "Question 3")
+ "Question 3")  ![alt text](screenshots/DFG_2017-03-24-14-37-49.png
 
 
